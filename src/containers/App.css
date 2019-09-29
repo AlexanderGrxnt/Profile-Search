@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+  }
+
+  
+@font-face {
+  font-family: 'NeoRetroDraw';
+  font-style: normal;
+  font-weight: normal;
+  src: local('NeoRetroDraw'), url('NEORD___.woff') format('woff');
+  }
+
+  h1{
+    font-family: 'NeoRetroDraw';
+    font-weight: 200;
+    color: #15f5ed;
+   
+  }
+
+  .profilePics{
+    /* width: 10%; */
+  }
