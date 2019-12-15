@@ -27,7 +27,7 @@ class App extends Component {
     // constructor(){
     //     super()
     //     this.state = {
-    //         robots: [],
+    //         people: [],
     //         // searchfield: ''
     //     }
     // }
@@ -36,7 +36,7 @@ class App extends Component {
         this.props.onRequestPeople();
         // fetch('https://jsonplaceholder.typicode.com/users')
         //     .then(response => response.json())
-        //     .then(users => this.setState({ robots: users}));
+        //     .then(users => this.setState({ people: users}));
     }
 
     // onSearchChange = (event) => {
@@ -44,14 +44,14 @@ class App extends Component {
     // }
 
     render() {
-        // const { robots } = this.state;
+        // const { people } = this.state;
         const {searchField, onSearchChange, people, isPending } = this.props;
 
         const filteredPeople = people.filter(people => {
             return people.name.toLowerCase().includes(searchField.toLowerCase());
         })
 
-        //  return !robots.length ?
+        //  return !people.length ?
         return isPending ?
             <h1>Loading</h1> :        //if
             (                         //else
@@ -59,7 +59,7 @@ class App extends Component {
                     <h1 className="f1">Search Profiles</h1>
                     <Searchbox searchChange = {onSearchChange} />
                     <Scroll>
-                        <Cardlist robots={filteredPeople}/>
+                        <Cardlist people={filteredPeople}/>
                     </Scroll>
                 </div>
             );
